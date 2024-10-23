@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai, Selamat Datang || Portfolio website</title>
+  <link rel="icon" href="img/bg.jpg" type="image/jpg">
+</head>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo"><span>Olan</span>Maulana</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">BERANDA</a></li>
+            <li><a href="#about">TENTANG</a></li>
+            <li><a href="#services">MELAYANI</a></li>
+            <li><a href="#portfolio">PORTOFOLIO</a></li>
+            <li><a href="#blog">INFORMASI</a></li>
+            <li><a href="#contact">KONTAK</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="https://wa.me/6287877611218?text=Halo%20saya%20ingin%20bertanya" class="btn">
+                Ayo ngobrol <i class='bx bx-message-dots'></i>
+              </a>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h3>Selamat datang di Duniaku</h3>
+            <h2>Hai, Saya Olan</h2>
+
+            <div class="text-animate">
+                <h2>Pengembangan Websiteku</h2>
+            </div>
+
+            <p>Perusahaan itu sendiri adalah perusahaan yang sangat sukses. Kita dipilih oleh keinginan untuk merebut sesuatu, dan kita mempercayakan kesenangan apapun kepada orang bijak dengan kesenangan terkecil.</p>
+
+            <div class="btn-box">
+             
+                <style>
+                    #pinForm {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                        width: 300px; /* Atur lebar sesuai kebutuhan */
+                        margin: 0 auto; /* Center form */
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+                
+                    #pinForm img {
+                        width: 50px;
+                        height: auto;
+                        margin-bottom: 15px;
+                    }
+                
+                    #pinForm label {
+                        margin-bottom: 5px;
+                    }
+                
+                    #pinForm input {
+                        padding: 10px;
+                        width: 100%;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        margin-bottom: 15px;
+                    }
+                
+                    #pinForm button {
+                        padding: 10px 15px;
+                        background-color: #28a745;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                
+                    #pinForm button:hover {
+                        background-color: #218838;
+                    }
+                </style>
+               
+
+                <div id="pinForm">
+                    <img src="img/cvku.jpg" alt="Logo" style="width: 150px; height: auto; margin-bottom: 5px;">
+                    <label for="pin">Masukkan PIN Download CV</label>
+                    <input type="password" id="pin" />
+                    <button onclick="checkPin()">
+                        <i class='bx bx-check'></i> Submit
+                      </button>
+                    
+                </div>
+                <a href="#" onclick="location.reload();">
+                    <i class='bx bx-refresh'></i> 
+                  </a>
+
+    <script>
+        const correctPin = "Kernaden02"; // Ganti dengan PIN yang diinginkan
+
+        document.getElementById('downloadBtn').onclick = function(event) {
+            event.preventDefault(); // Mencegah tautan default
+            document.getElementById('pinForm').style.display = 'block'; // Tampilkan formulir PIN
+        };
+
+        function checkPin() {
+            const enteredPin = document.getElementById('pin').value;
+            if (enteredPin === correctPin) {
+                window.open('img/CV TERBARU FIX OLAN MAULANA.pdf', '_blank'); // Mengunduh file
+                document.getElementById('pinForm').style.display = 'none'; // Sembunyikan formulir
+            } else {
+                alert('PIN salah, coba lagi / Silahkan Hubungi Sosial Media Ku!');
+            }
+        }
+    </script>
+            </div>
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="https://www.instagram.com/_olanmaulana?igsh=dWliNTZjZmk4djI4"><i class='bx bxl-instagram'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://wa.me/6287877611218?text=Halo%20saya%20ingin%20bertanya"><i class='bx bxl-whatsapp'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="mailto:olanm188@gmail.com"> <i class='bx bxl-gmail'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://www.facebook.com/olan.maulana.3998"><i class='bx bxl-facebook'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <img src="img/ppsenyummanis1.png" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/portofolio.jpg" alt="" class="aboutHero">
+            <div class="showcase-ring">
+                <img src="shapes/ring.png" class="ring">
+                <img src="shapes/circle.png" class="circle">
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Tentang saya</h2>
+            <p>Saya seorang lulusan baru S1 Teknik Informatika di Universitas Serang Raya yang terampil dalam mengatur membuat halaman website dan memiliki kemampuan microsoft Office. Saya mampu bekerja secara kreatif, inovatif, jujur dan mampu mengikuti perkembangan industri saat ini. Saya memiliki sifat disiplin, rajin, jujur dan selalu antusias untuk mempelajari hal-hal baru terkait pemrograman.</p>
+            
+            <div class="about-btn">
+                <button class="active" onclick="showSection('skills')">Keterampilan Utama</button>
+                <button onclick="showSection('awards')">Penghargaan</button>
+                <button onclick="showSection('education')">Pendidikan</button>
+                
+            </div>
+            
+            <div id="skills" class="content-section">
+                <div class="content">
+                    <div class="text-box">
+                        <p>Soft Skill</p>
+                        <span>Manajemen Waktu,  Kolaborasi, Problem Solving, Pengembangan diri & Kemampuan Adaptasi</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Hard Skill</p>
+                        <span>Keahlian dasar software komputer,  Digital marketing & Project management</span>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <div id="awards" class="content-section" style="display:none;">
+                <div class="content">
+                    <div class="text-box">
+                        <p>Magang Kuliah Kerja Praktek</p>
+                        <p>DINAS KEPENDUDUKAN DAN PENCACATAN SIPIL KOTA CILEGON</p>
+                        <span>Dinas Kependudukan dan Pencatatan Sipil (DISDUKCAPIL) Kota Cilegon merupakan salah satu instansi pemerintah yang bergerak pada bidang pelyaanan jasa administrasi kependudukan. Kegiatan magang ini dilaksanakan sekitar Satu (1) bulan terhitung sejak 20 Agustus 2021 sampai 20 September 2021. Di DISDUKCAPIL Kota Cilegon posisi magang Pendamping Layanan Administrasi Kependudukan.</span>
+
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <div id="education" class="content-section" style="display:none;">
+                <div class="content">
+                    <div class="text-box">
+                        <p>2019 - 2023</p>
+                        <span>Universitas Serang Raya</span>
+                        <span>S1 Teknik Informatika</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function showSection(section) {
+                // Sembunyikan semua section
+                const sections = document.querySelectorAll('.content-section');
+                sections.forEach((sec) => {
+                    sec.style.display = 'none';
+                });
+        
+                // Tampilkan section yang dipilih
+                document.getElementById(section).style.display = 'block';
+        
+                // Ubah status aktif pada tombol
+                const buttons = document.querySelectorAll('.about-btn button');
+                buttons.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active'); // Menambahkan kelas aktif pada tombol yang diklik
+            }
+        </script>
+                <div class="cvContent"></div>
+               
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">Layanan</h2>
+            
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer'></i>
+                    <span></span>
+                </div>
+                <h2>Pengembangan Aplikasi</h2>
+                <p>
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        Dalam era digital yang terus berkembang, pengembangan aplikasi menjadi jantung dari transformasi digital. 
+                        Aplikasi memungkinkan bisnis untuk berinovasi, meningkatkan visibilitas mereka, dan menciptakan hubungan yang lebih erat dengan pelanggan. 
+                        Dengan menggabungkan fitur-fitur canggih dan penggunaan data yang cerdas, aplikasi dapat membantu perusahaan untuk tetap kompetitif.
+                    </span>
+                </p>
+                <a href="javascript:void(0);" class="readMore" onclick="toggleReadMore(this)">Selengkapnya</a>
+            </div>
+            
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt'></i>
+                    <span></span>
+                </div>
+                <h2>Pengembangan Web</h2>
+                <p>
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        Apa itu pengembangan web dan mengapa peran mereka sangat krusial?
+                        Mereka adalah individu yang merancang, membangun, dan memelihara situs web. Mereka memastikan bahwa situs web tidak hanya tampak menarik tetapi juga berfungsi dengan baik. Dengan kemajuan teknologi dan kebutuhan akan pengalaman pengguna yang optimal, keberadaan mereka menjadi semakin penting. Mereka membantu menciptakan situs web yang responsif, aman, dan mudah digunakan, yang semuanya berkontribusi pada kesuksesan online sebuah bisnis.
+                    </span>
+                </p>
+                <a href="javascript:void(0);" class="readMore" onclick="toggleReadMore(this)">Selengkapnya</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop'></i>
+                    <span></span>
+                </div>
+                <h2>Desain UI/UX</h2>
+                <p>
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        Menjadi Desainer UI/UX untuk sukses sebagai desainer UI/UX junior, sangat penting untuk menguasai kombinasi keterampilan yang diperlukan untuk membuat desain yang sesuai keduanya menarik secara visual dan ramah pengguna. Dengan mengasah keterampilan desain visual dan pengalaman pengguna, serta pengetahuan perangkat lunak dan komunikasi yang efektif, Anda akan menjadi kontributor berharga bagi perusahaan teknologi mana pun.
+
+                        Seiring bertambahnya pengalaman, Anda akan dapat fokus pada bidang yang benar-benar Anda minati, namun memulai dengan beragam keterampilan ini akan memberi Anda landasan yang kuat untuk karier Anda.
+                    </span>
+                </p>
+                <a href="javascript:void(0);" class="readMore" onclick="toggleReadMore(this)">Selengkapnya</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bxs-party'></i>
+                    <span></span>
+                </div>
+                <h2>Digital Marketing</h2>
+                <p>
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        Dengan menggunakan teknologi digital untuk mempromosikan produk atau layanan, bisnis dapat menjangkau audiens yang lebih besar, berinteraksi dengan pelanggan secara real-time, dan melakukannya dengan cara yang hemat biaya.
+                    </span>
+                </p>
+                <a href="javascript:void(0);" class="readMore" onclick="toggleReadMore(this)">Selengkapnya</a>
+            </div>
+            
+            <script>
+            function toggleReadMore(element) {
+                var parent = element.closest('.servicesItem'); // Mendapatkan kontainer terdekat
+                var dots = parent.querySelector('.dots');
+                var moreText = parent.querySelector('.more');
+                var btnText = element;
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Selengkapnya";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Tutup";
+                    moreText.style.display = "inline";
+                }
+            }
+            </script>
+            </div>
+
+            
+
+        <div class="proposal">
+            <div class="text-box">
+                <span>Dapatkan Sentuhan</span>
+                <h3>Miliki Proyek di Pikiran Anda</h3>
+                <a href="#contact" class="btn">Hubungi saya</a>
+            </div>
+            <img src="img/joki tugas.png" class="first">
+        </div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/circle.png" class="circle2">
+            <img src="shapes/circle.png" class="circle3">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">Portofolio</h2>
+          
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All</button>
+            <button class="button" data-filter=".web">Pengembangan Web</button>
+            <button class="button" data-filter=".uiux">Desain UI/UX</button>
+            <button class="button" data-filter=".branding">Personal Skill</button>
+            <button class="button" data-filter=".portofolio">My Portofolio</button>
+            <button class="button" data-filter=".template">Template Portofolio</button>
+        </div>
+ <div class="portfolio-gallery">
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>Desain Grafis</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Gak punya waktu untuk bikin banner sendiri? Atau pengen buat banner tapi magernya minta ampun?...Serahkan saja ke HARGA DESAIN BANNER kami
+                    </p>
+                    <a href="#blog" class="btn">Selengkapnya</a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/Melayani-Desain.png" alt="">
+                </div>
+            </div>
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Aplikasi Website</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Kamu tidak perlu menghadapinya sendirian. Setiap mahasiswa dan pelajar pernah merasakan beban tugas yang berat, waktu yang terbatas, dan stres yang menghampiri. Bagaimana cara mengatasinya? Bagaimana menjaga kualitas hidupmu tanpa harus terbebani dengan tugas-tugas yang menumpuk?
+                    </p>
+                    <a href="#blog" class="btn">Selengkapnya</a>
+                   
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+    <div class="portfolio-img">
+    <img src="img/portfolio/Melayaniaplikasi.png" alt="">
+    </div>
+    </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Jasa Joki Tugas</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Buatin Tugasku menyediakan layanan jasa joki pengerjaan tugas dengan biaya yang murah dan terjangkau di kantong pelajar dan mahasiswa.
+                    </p>
+                    <a href="#blog" class="btn">Selengkapnya</a>
+                    
+
+     <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/joki tugas.png" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="portfolio-box mix portofolio">
+                <div class="portfolio-content">
+                    <h3>My Portofolio</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Percaya diri tidak sama dengan ego. Ego adalah berpikir memiliki semua jawaban. Percaya diri adalah mengetahui tidak memiliki jawaban, tetapi menjadi cukup yakin bahwa akan dapat menemukannya.
+                    </p>
+                    <a href="#" id="downloadZip" class="btn">
+                        <i class='bx bx-download'></i> Unduh My Portofolio
+                      </a>
+                      
+                      <script>
+                      document.getElementById('downloadZip').addEventListener('click', function() {
+                        const zip = new JSZip();
+                      
+                        // Add an image
+                        zip.file("portofolio.jpg", fetch('img/portfolio/portofolio.jpg').then(response => response.blob()));
+                      
+                        // Add a text file
+                        const textContent = "This is the portfolio text content.";
+                        zip.file("portfolio.txt", textContent);
+                      
+                        // Generate the ZIP file
+                        zip.generateAsync({ type: "blob" })
+                          .then(function(content) {
+                            // Use FileSaver.js to save the ZIP file
+                            saveAs(content, "My_Portfolio.zip");
+                          });
+                      });
+                      </script>
+                      
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/portofolio.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-01</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-01
+                    </p>
+                    <a href="img/template/template portofolio-01.png" download="template portofolio-01.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                      
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-01.png" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-02</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-02
+                    </p>
+                    <a href="img/template/template portofolio-02.png" download="template portofolio-02.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-02.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-03</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-03
+                    </p>
+                    <a href="img/template/template portofolio-03.png" download="template portofolio-03.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-03.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-04</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-04
+                    </p>
+                    <a href="img/template/template portofolio-04.png" download="template portofolio-04.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-04.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-05</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-05
+                    </p>
+                    <a href="img/template/template portofolio-05.png" download="template portofolio-05.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-05.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-06</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-06
+                    </p>
+                    <a href="img/template/template portofolio-06.png" download="template portofolio-06.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-06.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-07</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-07
+                    </p>
+                    <a href="img/template/template portofolio-07.png" download="template portofolio-07.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-07.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-08</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-08
+                    </p>
+                    <a href="img/template/template portofolio-08.png" download="template portofolio-08.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-08.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-09</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-09
+                    </p>
+                    <a href="img/template/template portofolio-09.png" download="template portofolio-09.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-09.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box template">
+                <div class="portfolio-content">
+                    <h3>Template portofolio-10</h3>
+                    <p class="excerpt" id="lorem-ipsum">
+                        Portofolio-10
+                    </p>
+                    <a href="img/template/template portofolio-10.png" download="template portofolio-10.png" class="btn">
+                        <i class='bx bx-download'></i> Unduh
+                      </a>
+                    
+
+    <script>
+        document.getElementById('download').onclick = function() {
+            const text = document.getElementById('lorem-ipsum').innerText;
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'lorem_ipsum.txt';
+            link.click();
+        };
+    </script>
+    </div>
+                <div class="portfolio-img">
+                    <img src="img/template/template portofolio-10.png" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    
+
+
+
+    <section class="blog" id="blog">
+        <div class="main-text">
+            <h2 class="heading">Informasi</h2>
+            <span>Berita & Posting Terbaru</span>
+        </div>
+        <div class="blog-box swiper mySwiper">
+            <div class="cards swiper-wrapper">
+                 <div class="card swiper-slide">
+                    <div class="card-top">
+                        <!-- Link untuk download gambar -->
+                        <a href="img/portfolio/portofolio.jpg" download>
+                            <img src="img/portfolio/portofolio.jpg" alt="Mobile App Landing Page" style="max-width: 100%; height: auto;">
+                        </a>
+                        <div class="card-info">
+                            <h2>My Portfolio</h2>
+                            <p class="excerpt" id="lorem-ipsum">
+                                Percaya diri tidak sama dengan ego. Ego adalah berpikir memiliki semua jawaban. 
+                                Percaya diri adalah mengetahui tidak memiliki jawaban, tetapi menjadi cukup yakin bahwa akan dapat menemukannya.
+                            </p>
+                            <a href="img/portfolio/portofolio.jpg" download class="download-button">
+                                <i class='bx bx-download'></i> Lihat Gambar
+                              </a>
+                              
+                              
+                        </div>
+                    </div>
+                    <script>
+                        document.getElementById('download').onclick = function() {
+                            const text = document.getElementById('lorem-ipsum').innerText;
+                            const blob = new Blob([text], { type: 'text/plain' });
+                            const link = document.createElement('a');
+                            link.href = window.URL.createObjectURL(blob);
+                            link.download = 'lorem_ipsum.txt';
+                            link.click();
+                        };
+                    </script>
+                    </div>
+             
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <!-- Link untuk download gambar -->
+                        <a href="img/portfolio/Melayaniaplikasi.png" download>
+                            <img src="img/portfolio/Melayaniaplikasi.png" alt="Mobile App Landing Page" style="max-width: 100%; height: auto;">
+                        </a>
+                        <div class="card-info">
+                            <h2>Jasa Aplikasi Website</h2>
+                            <p class="excerpt" id="lorem-ipsum">
+                                Jika Anda ingin memiliki sebuah website untuk menopang bisnis atau untuk sekedar mengekspresikan diri lewat tulisan dan konten lainnya. Dapatkan website yang mencerminkan bisnis Anda dengan bantuan desainer dan programer terbaik di bidangnya. Anda dapat terhubung dengan programmer yang menyediakan jasa pemrograman web yang tepat untuk mendapatkan website terbaik bagi bisnis Anda.
+                                <p>Mau bertanya-tanya yang lebih banyak?</p>
+                                Informasi dan order langsung hubungi :
+                            </p>
+                            <a href="https://wa.me/6287877611218?text=Halo,%20saya%20tertarik%20dengan%20layanan%20desain%20grafis%20Anda" target="_blank">
+                                <button id="contact-wa" style="display: flex; align-items: center;">
+                                    <img src="img/logowa.jpg" alt="WhatsApp Logo" style="width:20px; height:20px; vertical-align:middle; margin-right: 5px;"> 
+                                    Via WhatsApp
+                                </button>
+                            </a>
+                            <a href="img/portfolio/Melayaniaplikasi.png" download class="download-button">
+                                <i class='bx bx-download'></i> Lihat Gambar
+                              </a>
+                              
+                        </div>
+                    </div>
+                
+                    <script>
+                        document.getElementById('download').onclick = function() {
+                            const text = document.getElementById('lorem-ipsum').innerText;
+                            const blob = new Blob([text], { type: 'text/plain' });
+                            const link = document.createElement('a');
+                            link.href = window.URL.createObjectURL(blob);
+                            link.download = 'lorem_ipsum.txt';
+                            link.click();
+                        };
+                    </script> 
+                    </div>
+                
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <!-- Link untuk download gambar -->
+                        <a href="img/portfolio/Melayani-Desain.png" download>
+                            <img src="img/portfolio/Melayani-Desain.png" alt="Mobile App Landing Page" style="max-width: 100%; height: auto;">
+                        </a>
+                        <div class="card-info">
+                            <h2>Jasa Desain Grafis</h2>
+                            <p class="excerpt" id="lorem-ipsum">
+                                kamu tinggal terima hasil jadi tanpa perlu ribet segala macam. Nggak usah ragu dengan kualitas desainnya…
+                                <p>3 ALASAN KENAPA HARUS PAKAI JASA KAMI :</p>
+                                <p>1. Desain bergaransi</p>
+                                 <p>2. Konsultasi gratis</p>
+                                3. File master
+                                Mau bertanya-tanya yang lebih banyak?
+                                Informasi dan order langsung hubungi :
+                            
+                            </p>
+                            <a href="https://wa.me/6287877611218?text=Halo,%20saya%20tertarik%20dengan%20layanan%20desain%20grafis%20Anda" target="_blank">
+                                <button id="contact-wa" style="display: flex; align-items: center;">
+                                    <img src="img/logowa.jpg" alt="WhatsApp Logo" style="width:20px; height:20px; vertical-align:middle; margin-right: 5px;"> 
+                                    Via WhatsApp
+                                </button>
+                            </a>
+                            
+                            <a href="img/portfolio/Melayani-Desain.png" download class="download-button">
+                                <i class='bx bx-download'></i> Lihat Gambar
+                              </a>
+                              
+                        </div>
+                    </div>
+                
+                    <script>
+                        document.getElementById('download').onclick = function() {
+                            const text = document.getElementById('lorem-ipsum').innerText;
+                            const blob = new Blob([text], { type: 'text/plain' });
+                            const link = document.createElement('a');
+                            link.href = window.URL.createObjectURL(blob);
+                            link.download = 'lorem_ipsum.txt';
+                            link.click();
+                        };
+                    </script>
+                      
+                       
+                    </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <!-- Link untuk download gambar -->
+                        <a href="img/portfolio/joki tugas.png" download>
+                            <img src="img/portfolio/joki tugas.png" alt="Mobile App Landing Page" style="max-width: 100%; height: auto;">
+                        </a>
+                        <div class="card-info">
+                            <h2>Jasa Joki Tugas</h2>
+                            <p class="excerpt" id="lorem-ipsum">
+                                Masa ngajak keluar doi setiap malam minggu dan bayarin semua kebutuhannya bisa, tapi bayar untuk kebutuhan diri sendiri supaya dapet nilai bagus nggak bisa? Yuk cek harga tugasmu sekarang!
+                            </p>
+                            <a href="https://wa.me/6287877611218?text=Halo,%20saya%20tertarik%20dengan%20layanan%20desain%20grafis%20Anda" target="_blank">
+                                <button id="contact-wa" style="display: flex; align-items: center;">
+                                    <img src="img/logowa.jpg" alt="WhatsApp Logo" style="width:20px; height:20px; vertical-align:middle; margin-right: 5px;"> 
+                                    Via WhatsApp
+                                </button>
+                            </a>
+                            <a href="img/portfolio/joki tugas.png" download class="download-button">
+                                <i class='bx bx-download'></i> Lihat Gambar
+                              </a>
+                              
+                        </div>
+                    </div>
+                
+                    <script>
+                        document.getElementById('download').onclick = function() {
+                            const text = document.getElementById('lorem-ipsum').innerText;
+                            const blob = new Blob([text], { type: 'text/plain' });
+                            const link = document.createElement('a');
+                            link.href = window.URL.createObjectURL(blob);
+                            link.download = 'lorem_ipsum.txt';
+                            link.click();
+                        };
+                    </script> 
+                    </div>
+                </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/second-circle.png" class="second-circle">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+
+    </section>
+
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Kontak saya</h2>
+                    <span>hubungi saya</span>
+                </div>
+                <form id="contactForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                  
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  
+                    <label for="message">Subjek:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <label for="tulispesan">Tulis pesan:</label>
+                    <textarea id="tulispesan" name="tulispesan" required></textarea>
+                  
+                    <button type="button" class="btn" onclick="sendMessageToWhatsApp()">Kirim pesan</button>
+                  </form>
+                  
+                  <script>
+                    function sendMessageToWhatsApp() {
+                      // Ambil nilai input dari form
+                      var name = document.getElementById('name').value;
+                      var email = document.getElementById('email').value;
+                      var message = document.getElementById('message').value;
+                      var tulispesan = document.getElementById('tulispesan').value;
+                  
+                      // Nomor WhatsApp tujuan (ganti dengan nomor kamu)
+                      var phoneNumber = '6287877611218'; // Ganti dengan nomor WhatsApp
+                  
+                      // Buat pesan yang akan dikirim ke WhatsApp
+                      var fullMessage = 'Nama: ' + name + '\nEmail: ' + email + '\nSubjek: ' + message       + '\nTulis pesan: ' + tulispesan;
+                  
+                      // Encode pesan agar sesuai dengan format URL
+                      var encodedMessage = encodeURIComponent(fullMessage);
+                  
+                      // Buat URL untuk WhatsApp
+                      var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+                  
+                      // Buka WhatsApp dengan URL yang sudah dibuat
+                      window.open(whatsappUrl, '_blank');
+                    }
+                  </script>
+            </div>
+            <div class="skills">
+                <div class="container">
+                    <div class="skillBox">
+                        <div class="main-text">
+                            <h2 class="heading">Keahlian Saya</h2>
+                            <span>Biarkan Saya Membantu Anda</span>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="80">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Microsoft Office
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="47">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    HTML & CSS
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="56">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    UI/UX Desain
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="19">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    Hypertext Preprocessor (PHP)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
